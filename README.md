@@ -19,3 +19,9 @@ Official website for Square Squad (SQS), a Mech Arena gaming community.
 npm install
 npm run dev
 ```
+
+## Things to be done after a new updation
+
+git add .
+git commit -m "Updated gallery and resources"
+git push
