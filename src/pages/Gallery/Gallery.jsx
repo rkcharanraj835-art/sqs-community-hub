@@ -6,7 +6,7 @@ import members from "../../data/members";
 
 const roleColors = {
   Leader: "bg-yellow-500 text-black",
-  Officer: "bg-cyan-500 text-black",
+  SQS_Moderator: "bg-cyan-500 text-black",
   Elite: "bg-purple-500 text-white",
   Member: "bg-slate-700 text-white",
 };
@@ -83,7 +83,7 @@ function Gallery() {
 
                   <div>
                     <p className="text-xs uppercase tracking-widest text-slate-500">
-                      Favorite Mech
+                      Top Mech
                     </p>
 
                     <p className="font-semibold text-white">

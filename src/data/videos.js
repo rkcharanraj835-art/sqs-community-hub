@@ -4,7 +4,7 @@ const creators = [
     name: "SQUARE SQUAD ",
     role: "Founder • SQS",
     channel: "https://youtube.com/@blacksquare-sqs?si=P7R_dH3e6KVgHA5B",
-    thumbnail: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
+    thumbnail: "/thumbnails/blacksquare.png",
     subscribers: "100+",
   },
 
@@ -13,7 +13,7 @@ const creators = [
     name: "Thiru Arasu",
     role: "Content Creator",
     channel: "https://youtube.com/@origin_ma_tamil?si=Fyqjxy0KwR-JWTxc",
-    thumbnail: "/creators/creator2.jpg",
+    thumbnail: "/thumbnails/thiru.png",
     subscribers: "44+",
   },
 
@@ -22,8 +22,16 @@ const creators = [
     name: "Wutender ASH TAMIL - MECH ARENA",
     role: "Content Creator",
     channel: "https://youtube.com/@wutenderashtamil?si=Xu32lc0DrX07BTDd",
-    thumbnail: "/creators/creator3.jpg",
+    thumbnail: "/thumbnails/tender.png",
     subscribers: "1.7k+",
+  },
+    {
+    id: 4,
+    name: "MECH ARENA [SILVER]",
+    role: "Content Creator",
+    channel: "https://youtube.com/@silver-mecharena?si=pr51EvXOWRWqdyvA",
+    thumbnail: "/thumbnails/silver.png",
+    subscribers: "600+",
   },
 ];
 

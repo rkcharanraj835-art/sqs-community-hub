@@ -28,7 +28,7 @@ const events = [
     title: "Hide and Seek",
     date: "To be Announced",
     time: "9:00 PM IST",
-    prize: "₹200 Prize Pool",
+    prize: "₹600 Prize Pool",
     mode: "Control Point Clash (1 Mod vs 5 Players)",
     status: "Registration Open",
     featured: true,
