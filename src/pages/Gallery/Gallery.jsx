@@ -9,6 +9,8 @@ const roleColors = {
   SQS_Moderator: "bg-cyan-500 text-black",
   Elite: "bg-purple-500 text-white",
   Member: "bg-slate-700 text-white",
+  Discord_Developer: "bg-[#5865F2] text-white",
+  Web_Developer: "bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-600 text-black",
 };
 
 function Gallery() {

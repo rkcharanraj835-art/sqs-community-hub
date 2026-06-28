@@ -89,11 +89,12 @@ function Navbar() {
 
           {/* Desktop Button */}
 
-          <div className="hidden lg:block">
+          
+          <NavLink to="/community">
             <GlowButton>
-              <a href="/community">Join SQS</a>
+              Join SQS
             </GlowButton>
-          </div>
+          </NavLink>
 
           {/* Mobile Button */}
 
