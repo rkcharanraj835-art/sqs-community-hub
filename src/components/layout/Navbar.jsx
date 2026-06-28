@@ -146,10 +146,6 @@ function Navbar() {
 
           <div className="mt-auto">
 
-            <GlowButton fullWidth>
-              Join Community
-            </GlowButton>
-
             <p className="mt-6 text-center text-sm text-slate-500">
               © 2026 Square Squad
             </p>

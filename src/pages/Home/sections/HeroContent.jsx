@@ -43,12 +43,6 @@ function HeroContent() {
         {/* Buttons */}
         <div className="mt-10 flex flex-wrap gap-4">
 
-          <GlowButton
-            /*onClick={() => window.open(socials.community, "_blank")}*/
-            
-          >
-            <a href="community">Join Community</a>
-          </GlowButton>
 
           <GlowButton
             variant="outline"

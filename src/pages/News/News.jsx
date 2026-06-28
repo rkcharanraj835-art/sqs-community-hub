@@ -58,7 +58,7 @@ function LegendarySkins() {
   </p>
 
   <a
-    href="YOUR_GOOGLE_FORM_LINK"
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdqOZkANp21-mm7bCK5TaM5Lf_Gxjv-QMasZg9lPR8sKPwcZg/viewform?usp=publish-editor"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center rounded-xl bg-cyan-400 px-6 py-3 font-semibold text-black transition-all duration-300 hover:scale-105 hover:bg-cyan-300 hover:shadow-[0_0_30px_rgba(34,211,238,0.5)]"
