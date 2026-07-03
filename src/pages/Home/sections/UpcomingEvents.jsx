@@ -87,7 +87,7 @@ function UpcomingEvents() {
                 {/* Button */}
 
                 <button
-                  onClick={() => window.open(socials.whatsapp, "_blank")}
+                  onClick={() => window.open(socials.eventForms, "_blank")}
                   className="rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-4 font-bold text-white transition hover:scale-105 hover:shadow-[0_0_30px_rgba(255,119,0,0.45)]"
                 >
                   Register Now

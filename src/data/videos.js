@@ -10,7 +10,7 @@ const creators = [
 
   {
     id: 2,
-    name: "Thiru Arasu",
+    name: "ORIGIN_MA_Tamil",
     role: "Content Creator",
     channel: "https://youtube.com/@origin_ma_tamil?si=Fyqjxy0KwR-JWTxc",
     thumbnail: "/thumbnails/thiru.png",

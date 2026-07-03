@@ -5,7 +5,9 @@ export const socials = {
 
   youtube: "https://youtube.com/@blacksquare-sqs?si=m6cdZ4Wvf9ns-ZTT",
 
-  email: "brainy1008@gmail.com",
+  email: "https://brainy1008@gmail.com",
 
   community: "community",
+
+  eventForms: "",
 };

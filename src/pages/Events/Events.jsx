@@ -76,12 +76,7 @@ function Events() {
 
                 </div>
 
-                <button
-                  onClick={() => window.open(socials.whatsapp, "_blank")}
-                  className="rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 px-8 py-4 font-bold text-white transition hover:scale-105 hover:shadow-[0_0_35px_rgba(0,229,255,0.45)]"
-                >
-                  Register Now
-                </button>
+               
 
               </div>
             </motion.div>

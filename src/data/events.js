@@ -19,7 +19,7 @@ const events = [
     prize: "Community Rewards",
     mode: "Control Point Clash (1 Mod vs 5 Players)",
     status: "Coming Soon",
-    featured: false,
+    featured: true,
     description:
       "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out.",
   },
@@ -31,7 +31,7 @@ const events = [
     prize: "₹600 Prize Pool",
     mode: "Control Point Clash (1 Mod vs 5 Players)",
     status: "Registration Open",
-    featured: true,
+    featured: false,
     description:
       "Disappearing is the easy part—staying hidden is the challenge! Outsmart the seeker with clever hiding spots and teamwork in this thrilling game of suspense and fun.",
   },
