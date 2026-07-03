@@ -198,8 +198,8 @@ const clans = [
     members: [
       {
         name: "Black Square",
-        id: "45823641",
-        power: 4812,
+        id: "53292803",
+        power: 43381,
         role: "Leader",
       },
       {
