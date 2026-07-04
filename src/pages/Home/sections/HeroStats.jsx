@@ -9,7 +9,7 @@ import {
 const stats = [
   {
     icon: Users,
-    value: "50+",
+    value: "80+",
     label: "Community Members",
     color: "text-cyan-400",
   },

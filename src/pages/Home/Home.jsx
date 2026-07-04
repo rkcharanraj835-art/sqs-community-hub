@@ -9,10 +9,10 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
+      <UpcomingEvents />
       <AnnouncementSection />
       <FeaturedMechs />
-      <UpcomingEvents />
       <CommunityCTA />
     </>
   );

@@ -9,5 +9,5 @@ export const socials = {
 
   community: "community",
 
-  eventForms: "",
+  eventForms: "https://docs.google.com/forms/d/e/1FAIpQLSdYWVxf3wN1j_QOgR1UfjRvjwi9bbNkg1-RPjn_GEUAVEsZGw/viewform?usp=dialog",
 };

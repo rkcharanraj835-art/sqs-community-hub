@@ -7,5 +7,5 @@ export const navigation = [
   { name: "Our Squad", path: "/gallery" },
   { name: "Videos", path: "/videos" },
   { name: "Resources", path: "/news" },
-  { name: "Clan", path: "/contact" },
+  { name: "Clan", path: "/clan" },
 ];

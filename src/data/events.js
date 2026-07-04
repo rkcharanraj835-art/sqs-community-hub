@@ -16,12 +16,13 @@ const events = [
     title: "Red Light Green",
     date: "To be Announced",
     time: "9:00 PM IST",
+    registrationClose: "12 July 2026 • 11:59 PM IST",
     prize: "Community Rewards",
-    mode: "Control Point Clash (1 Mod vs 5 Players)",
-    status: "Coming Soon",
+    mode: "Control Point Clash (3 Players vs 3 Players)",
+    status: "Registration Open",
     featured: true,
     description:
-      "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out.",
+      "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out. Registration closes: 13 Jul 2026, 12:00 AM IST",
   },
   {
     id: 3,
@@ -30,7 +31,7 @@ const events = [
     time: "9:00 PM IST",
     prize: "₹600 Prize Pool",
     mode: "Control Point Clash (1 Mod vs 5 Players)",
-    status: "Registration Open",
+    status: "Coming Soon",
     featured: false,
     description:
       "Disappearing is the easy part—staying hidden is the challenge! Outsmart the seeker with clever hiding spots and teamwork in this thrilling game of suspense and fun.",

@@ -8,7 +8,7 @@ import Community from "../pages/Community/Community";
 import Gallery from "../pages/Gallery/Gallery";
 import Videos from "../pages/Videos/Videos";
 import News from "../pages/News/News";
-import Contact from "../pages/Contact/Contact";
+import Clan from "../pages/Clan/Clan";
 import NotFound from "../pages/NotFound/NotFound";
 
 function AppRoutes() {
@@ -22,7 +22,7 @@ function AppRoutes() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/videos" element={<Videos />} />
       <Route path="/news" element={<News />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/clan" element={<Clan />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

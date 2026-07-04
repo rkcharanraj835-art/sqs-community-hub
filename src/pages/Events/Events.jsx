@@ -4,6 +4,7 @@ import {
   FaClock,
   FaGift,
   FaUsers,
+  FaHourglassEnd,
 } from "react-icons/fa";
 
 import SectionHeader from "../../components/common/SectionHeader";
@@ -61,6 +62,8 @@ function Events() {
                       <FaClock className="text-cyan-400" />
                       {event.time}
                     </div>
+
+                    
 
                     <div className="flex items-center gap-3 text-slate-300">
                       <FaGift className="text-cyan-400" />
