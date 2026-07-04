@@ -22,7 +22,7 @@ const events = [
     status: "Registration Open",
     featured: true,
     description:
-      "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out. Registration closes: 13 Jul 2026, 12:00 AM IST",
+      "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out.",
   },
   {
     id: 3,

@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   FaCalendarAlt,
   FaClock,
@@ -9,10 +10,14 @@ import {
 
 import events from "../../../data/events";
 import { socials } from "../../../data/socials";
+import EventRulesModal from "../../Events/EventRulesModal";
 
 function UpcomingEvents() {
   // Show only featured events
+  
   const featuredEvents = events.filter((event) => event.featured);
+  const [showRules, setShowRules] = useState(false);
+  const [accepted, setAccepted] = useState(false);
 
   return (
     <section className="relative overflow-hidden bg-[#070B14] py-28">
@@ -101,18 +106,29 @@ function UpcomingEvents() {
 
                 {/* Register Button */}
                 <div className="flex justify-center lg:justify-end">
-                  <button
-                    onClick={() => window.open(socials.eventForms, "_blank")}
-                    className="rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,119,0,0.45)]"
-                  >
-                    Register Now
-                  </button>
-                </div>
+                <button
+                  onClick={() => {
+                    setShowRules(true);
+                    setAccepted(false);
+                  }}
+                  className="rounded-2xl bg-gradient-to-r from-orange-500 to-orange-600 px-8 py-4 font-bold text-white transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,119,0,0.45)]"
+                >
+                  Register Now
+                </button>
+              </div>
+
               </div>
             </motion.div>
           ))}
         </div>
       </div>
+
+        <EventRulesModal
+          open={showRules}
+          onClose={() => setShowRules(false)}
+          registerUrl={socials.eventForms}
+        />
+
     </section>
   );
 }
