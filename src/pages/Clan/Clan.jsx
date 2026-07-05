@@ -1,28 +1,62 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
-import clans from "../../data/clans";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/firebase";
 
 function Clan() {
+  const [clans, setClans] = useState([]);
   const [selectedClan, setSelectedClan] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchClans = async () => {
+      try {
+        const querySnapshot = await getDocs(collection(db, "clans"));
+
+        const data = querySnapshot.docs.map((doc) => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+
+        setClans(data);
+      } catch (error) {
+        console.error(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchClans();
+  }, []);
 
   const handleSelectClan = (clan) => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
-    setSelectedClan(clan);
-  };
+  setSelectedClan(clan);
+};
 
-  const handleBack = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+const handleBack = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 
-    setSelectedClan(null);
-  };
+  setSelectedClan(null);
+};
+
+  if (loading) {
+  return (
+    <section className="min-h-screen bg-[#070B14] flex items-center justify-center">
+      <h1 className="text-2xl text-white">
+        Loading clans...
+      </h1>
+    </section>
+  );
+}
 
   return (
     <section className="min-h-screen bg-[#070B14] px-6 py-28">
