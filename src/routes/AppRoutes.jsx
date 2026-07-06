@@ -11,6 +11,7 @@ import News from "../pages/News/News";
 import Clan from "../pages/Clan/Clan";
 import NotFound from "../pages/NotFound/NotFound";
 import Admin from "../pages/Admin/Admin";
+import AdminLogin from "../pages/Admin/AdminLogin";
 
 function AppRoutes() {
   return (
@@ -25,7 +26,8 @@ function AppRoutes() {
       <Route path="/news" element={<News />} />
       <Route path="/clan" element={<Clan />} />
       <Route path="*" element={<NotFound />} />
-      <Route path="/admin" element={<Admin />} />
+      <Route path="/admin" element={<AdminLogin />} />
+      <Route path="/admin/dashboard" element={<Admin />} />
     </Routes>
   );
 }
