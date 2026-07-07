@@ -57,7 +57,7 @@ function Dashboard() {
 
     setEditing(null);
 
-    alert("Power updated successfully!");
+    toast.success("Power updated successfully!");
   } catch (err) {
     console.error(err);
   }

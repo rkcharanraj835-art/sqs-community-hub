@@ -10,6 +10,7 @@ import ClanManager from "../../components/admin/ClanManager";
 import EventManager from "../../components/admin/EventManager";
 import GalleryManager from "../../components/admin/GalleryManager";
 import Settings from "../../components/admin/Settings";
+import MemberManager from "../../components/admin/members/MemberManager";
 
 function Admin() {
   const [page, setPage] = useState("dashboard");
@@ -63,6 +64,8 @@ function Admin() {
         {page === "gallery" && <GalleryManager />}
 
         {page === "settings" && <Settings />}
+
+        {page === "members" && <MemberManager />}
       </main>
     </div>
   );

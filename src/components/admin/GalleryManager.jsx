@@ -1,10 +1,22 @@
+import CrudManager from "./crud/CrudManager";
+
 function GalleryManager() {
   return (
-    <div className="p-10">
-      <h1 className="text-5xl font-bold text-white">
-        Gallery Manager
-      </h1>
-    </div>
+    <CrudManager
+      title="Gallery Manager"
+      collectionName="gallery"
+      fields={[
+        {
+          name: "image",
+          label: "Image URL",
+          type: "image",
+        },
+        {
+          name: "title",
+          label: "Title",
+        },
+      ]}
+    />
   );
 }
 

@@ -8,10 +8,32 @@ import {
 } from "react-icons/fa";
 
 import SectionHeader from "../../components/common/SectionHeader";
-import events from "../../data/events";
 import { socials } from "../../data/socials";
+import { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
 
+import { db } from "../../firebase/firebase";
 function Events() {
+  const [events, setEvents] = useState([]);
+
+useEffect(() => {
+  loadEvents();
+}, []);
+
+const loadEvents = async () => {
+  try {
+    const snapshot = await getDocs(collection(db, "events"));
+
+    const data = snapshot.docs.map((doc) => ({
+      id: doc.id,
+      ...doc.data(),
+    }));
+
+    setEvents(data);
+  } catch (err) {
+    console.error(err);
+  }
+};
   return (
     <main className="min-h-screen bg-[#05070D] py-28">
       <div className="mx-auto max-w-7xl px-6">

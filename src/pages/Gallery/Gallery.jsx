@@ -2,7 +2,9 @@ import { motion } from "framer-motion";
 import { FaCrown, FaRobot } from "react-icons/fa";
 
 import SectionHeader from "../../components/common/SectionHeader";
-import members from "../../data/members";
+import { useEffect, useState } from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../firebase/firebase";
 
 const roleColors = {
   Leader: "bg-yellow-500 text-black",
@@ -13,7 +15,27 @@ const roleColors = {
   Web_Developer: "bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-600 text-black",
 };
 
+
+
 function Gallery() {
+
+  const [members, setMembers] = useState([]);
+
+useEffect(() => {
+  loadMembers();
+}, []);
+
+const loadMembers = async () => {
+  const snapshot = await getDocs(collection(db, "members"));
+
+  const data = snapshot.docs.map((doc) => ({
+    id: doc.id,
+    ...doc.data(),
+  }));
+
+  setMembers(data);
+};
+
   return (
     <main className="min-h-screen bg-[#05070D] py-28">
       <div className="mx-auto max-w-7xl px-6">

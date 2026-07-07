@@ -75,7 +75,7 @@ const [newMember, setNewMember] = useState({
 
     setEditing(null);
 
-    alert("Member updated successfully!");
+    toast.success("Member updated successfully!");
   } catch (err) {
     console.error(err);
   }
@@ -106,7 +106,7 @@ const deleteMember = async (clanId, memberId) => {
       )
     );
 
-    alert("Member deleted!");
+    toast.success("Member deleted!");
   } catch (err) {
     console.error(err);
   }
@@ -147,7 +147,7 @@ const createMember = async (clanId) => {
       role: "Member",
     });
 
-    alert("Member created successfully!");
+    toast.success("Member created successfully!");
   } catch (err) {
     console.error(err);
   }
