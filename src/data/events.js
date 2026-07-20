@@ -20,7 +20,7 @@ const events = [
     prize: "Community Rewards",
     mode: "Control Point Clash (3 Players vs 3 Players)",
     status: "Registration Open",
-    featured: true,
+    featured: false,
     description:
       "Freeze, sprint, and survive! Test your speed, reflexes, and focus as you race to the finish—but move only when the light is green, or you're out.",
   },
