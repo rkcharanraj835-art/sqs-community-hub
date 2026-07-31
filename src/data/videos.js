@@ -14,7 +14,7 @@ const creators = [
     role: "Content Creator",
     channel: "https://youtube.com/@origin_ma_tamil?si=Fyqjxy0KwR-JWTxc",
     thumbnail: "/thumbnails/thiru.png",
-    subscribers: "44+",
+    subscribers: "100+",
   },
 
   {
@@ -23,16 +23,16 @@ const creators = [
     role: "Content Creator",
     channel: "https://youtube.com/@wutenderashtamil?si=Xu32lc0DrX07BTDd",
     thumbnail: "/thumbnails/tender.png",
-    subscribers: "1.7k+",
+    subscribers: "2.3k+",
   },
-    {
+   /* {
     id: 4,
     name: "MECH ARENA [SILVER]",
     role: "Content Creator",
     channel: "https://youtube.com/@silver-mecharena?si=pr51EvXOWRWqdyvA",
     thumbnail: "/thumbnails/silver.png",
     subscribers: "600+",
-  },
+  },*/
 ];
 
 export default creators;

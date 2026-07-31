@@ -17,7 +17,7 @@ function HeroSection() {
       </div>
 
       {/* Scroll */}
-      <ScrollIndicator />
+      {/*<ScrollIndicator /> */}
     </section>
   );
 }
