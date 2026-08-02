@@ -1,15 +1,33 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-function CreatePost() {
+function CreatePost({ onPost }) {
   const [post, setPost] = useState("");
+  const [image, setImage] = useState(null);
+
+  const handleImage = (e) => {
+  const file = e.target.files[0];
+
+  if (!file) return;
+
+  setImage(URL.createObjectURL(file));
+};
 
   const handlePost = () => {
   if (!post.trim()) return;
 
-  onPost(post);
+  onPost({
+  author: "Charan",
+  role: "SQS Moderator",
+  avatar: "https://i.pravatar.cc/150?img=12",
+  content: post,
+  image,
+  likes: 0,
+  comments: 0,
+});
 
   setPost("");
+  setImage(null);
 };
 
   return (
@@ -29,6 +47,23 @@ function CreatePost() {
         rows={5}
         className="w-full resize-none rounded-2xl border border-white/10 bg-[#0F172A] p-4 text-white outline-none transition focus:border-cyan-400"
       />
+
+      <div className="mt-5">
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImage}
+        className="text-slate-400"
+      />
+
+      {image && (
+        <img
+          src={image}
+          alt="Preview"
+          className="mt-4 max-h-80 w-full rounded-2xl object-cover"
+        />
+      )}
+    </div>
 
       <div className="mt-5 flex justify-end">
         <button

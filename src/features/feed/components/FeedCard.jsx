@@ -1,8 +1,20 @@
 import { motion } from "framer-motion";
 import { FaHeart, FaCommentDots, FaShare } from "react-icons/fa";
+import LikeButton from "./LikeButton";
+import { useState } from "react";
+import CommentSection from "./CommentSection";
 
 function FeedCard({ post }) {
+  const [showComments, setShowComments] = useState(false);
+  {post.image && (
+  <img
+    src={post.image}
+    alt="Post"
+    className="mt-5 w-full rounded-2xl object-cover"
+  />
+)}
   return (
+    
     <motion.div
       whileHover={{ y: -4 }}
       className="rounded-3xl border border-cyan-500/20 bg-white/5 p-6 backdrop-blur-xl"
@@ -39,15 +51,17 @@ function FeedCard({ post }) {
 
       <div className="mt-6 flex gap-8 text-slate-400">
 
-        <button className="flex items-center gap-2 hover:text-red-400">
-          <FaHeart />
-          {post.likes}
-        </button>
+        <LikeButton initialLikes={post.likes} />
 
-        <button className="flex items-center gap-2 hover:text-cyan-400">
+        <button
+          onClick={() => setShowComments(!showComments)}
+          className="flex items-center gap-2 hover:text-cyan-400"
+        >
           <FaCommentDots />
+
           {post.comments}
         </button>
+        {showComments && <CommentSection />}
 
         <button className="flex items-center gap-2 hover:text-green-400">
           <FaShare />

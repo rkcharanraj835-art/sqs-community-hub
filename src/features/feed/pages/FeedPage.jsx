@@ -1,26 +1,9 @@
-import { useState } from "react";
-
 import CreatePost from "../components/CreatePost";
 import FeedList from "../components/FeedList";
-import demoPosts from "../data/demoPosts";
+import { useFeed } from "../hooks/useFeed";
 
 function FeedPage() {
-  const [posts, setPosts] = useState(demoPosts);
-
-  const addPost = (content) => {
-    const newPost = {
-      id: Date.now(),
-      author: "Charan",
-      role: "SQS Moderator",
-      avatar: "https://i.pravatar.cc/150?img=12",
-      time: "Just now",
-      content,
-      likes: 0,
-      comments: 0,
-    };
-
-    setPosts([newPost, ...posts]);
-  };
+  const { posts, addPost } = useFeed();
 
   return (
     <main className="min-h-screen bg-[#05070D] py-28">
