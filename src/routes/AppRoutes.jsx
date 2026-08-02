@@ -12,6 +12,8 @@ import Clan from "../pages/Clan/Clan";
 import NotFound from "../pages/NotFound/NotFound";
 import Admin from "../pages/Admin/Admin";
 import AdminLogin from "../pages/Admin/AdminLogin";
+import ProfilePage from "../features/profile/pages/ProfilePage";
+import FeedPage from "../features/feed/pages/FeedPage";
 
 function AppRoutes() {
   return (
@@ -28,6 +30,8 @@ function AppRoutes() {
       <Route path="*" element={<NotFound />} />
       <Route path="/admin" element={<AdminLogin />} />
       <Route path="/admin/dashboard" element={<Admin />} />
+      <Route path="/profile/:username" element={<ProfilePage />} />
+      <Route path="/feed" element={<FeedPage />} />
     </Routes>
   );
 }

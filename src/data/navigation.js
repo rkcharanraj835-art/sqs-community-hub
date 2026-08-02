@@ -8,4 +8,5 @@ export const navigation = [
   { name: "Videos", path: "/videos" },
   { name: "Resources", path: "/news" },
   { name: "Clan", path: "/clan" },
+  { name: "Feed", path: "/feed" },
 ];
